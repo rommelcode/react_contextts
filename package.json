@@ -1,5 +1,5 @@
 {
-  "name": "react-context-example-for-ts",
+  "name": "appcontext-scratch",
   "version": "0.1.0",
   "private": true,
   "main": "src/index.tsx",
@@ -21,8 +21,6 @@
     "@types/react-dom": "16.0.6",
     "typescript": "^2.9.1"
   },
-  "keywords": [
-    "context"
-  ],
+  "keywords": [],
   "description": ""
 }

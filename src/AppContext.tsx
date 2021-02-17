@@ -1,13 +1,17 @@
 import * as React from "react";
 
-export interface AppContextInterface {
+interface IData {
   name: string;
-  author: string;
-  url: string;
+  address: string;
+  suburb: string;
 }
 
-const ctxt = React.createContext<AppContextInterface | null>(null);
+const myContext = React.createContext<IData>({
+  name: "Dik",
+  address: "Pielstraat",
+  suburb: "Kuthoertown"
+});
 
-export const AppContextProvider = ctxt.Provider;
-
-export const AppContextConsumer = ctxt.Consumer;
+export ContProvider :FC<IData> = ({name}) => {
+  <div>{name}</div>
+}
